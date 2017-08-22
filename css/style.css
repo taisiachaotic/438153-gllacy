@@ -1,0 +1,47 @@
+body {
+	font-size: 18px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: Roboto;
+	background-color: #859e90;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 41px;
+}
+
+article.offer-container-1 h2,
+article.offer-container-2 h2 {
+	font-size: 35px;
+	line-height: 41px;	
+	font-weight: 700;	
+}
+
+section.hit h3,
+section.ice-cream-range h3 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+article.features h2 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+article.news h2 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+section.modal-feedback h2 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+
+
