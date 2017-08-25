@@ -10,17 +10,33 @@
 <!--HEADER-->
          <header class="main-header">
             <nav class="main-navigation">
-                <a><img class="main-header-logo" src="img/logo.svg" alt="Логотип Глейси"></a>
+                <a href="index.html">
+                    <img class="main-header-logo" src="img/logo.svg" alt="Логотип Глейси">
+                </a>
                 <ul class="site-navigation">
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О компании</a></li>
                 </ul>
 
-                <ul class="user-navigation">
-                    <li><a href="#"><img src="img/loupe.svg" width="17px" height="17px" alt="Поиск"></a></li>
-                    <li><a href="#"><img src="img/entrance-white.svg" width="21px" height="19px" alt="Войти">Вход</a></li>
-                    <li><a href="#"><img src="img/basket-red.svg" width="21px" height="20px" alt="Корзина">2 товара</a></li>
+               <ul class="user-navigation">
+                    <li>
+                        <button type="button">
+                            <img src="img/loupe.svg" width="17px" height="17px" alt="Поиск">
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <img src="img/entrance-white.svg" width="21px" height="19px" alt="Войти">
+                                Вход  
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <img src="img/basket-red.svg" width="21px" height="20px" alt="Корзина">
+                                2 товара
+                        </button>
+                    </li>
                 </ul>
             </nav>
 
@@ -44,7 +60,8 @@
                 <h2>Сливочное мороженое</h2>
                 <form class="filters-form">
                     <fieldset filters-form-sorting>
-                        <p><label for="sorting">Сортировка:</label>
+                        <p>
+                            <label for="sorting">Сортировка:</label>
                             <select id="sorting" name="sorting-field">
                                 <option value="popularity">По популярности</option>
                                 <option value="cheap">сначала недорогие</option>
@@ -56,14 +73,8 @@
 
                     <fieldset class="filters-form-range">
                         <label for="range">Цена: 100 руб. - 500 руб.</label>
-                        <input type="range" min="0" max="100" value="50" id="range" step="100" list="price-settings">
-                            <datalist id=price-settings>
-                                <option>0</option>
-                                <option>100</option>
-                                <option>200</option>
-                                <option>300</option>     
-                                <option>500</option>
-                            </datalist>
+                        <label class="visually-hidden" for="range">Ползунок с выбором диапазона цен</label>
+                        <input id="range" type="range" min="50" max="500"  step="50">                      
                     </fieldset>
 
                     <fieldset class="filters-form-fatness">
@@ -111,7 +122,7 @@
                                 <label for="jam-checkbox">джемы</label>
                             </li>
                         </ul>
-                        <input class="filters-form-topping-button" type="submit" value="Применить">
+                        <button class="filters-form-topping-button" type="submit" value="Применить">Применить</button>
                     </fieldset>
                 </form>
             </section>
@@ -193,42 +204,142 @@
                     </a></li>
 
                     <ul class="pagination">
-                        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                        <li class="pagination-item"><a href="#">2</a></li>
-                        <li class="pagination-item"><a href="#">3</a></li>
-                        <li class="pagination-item"><a href="#">4</a></li>
-                        <li class="pagination-item"><a href="#">5</a></li>
-                        <li class="pagination-item"><a href="#">></a></li>
+                        <li class="pagination-item pagination-item-current">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">></a>
+                        </li>
                     </ul>           
             </section>
         </main>
 
 <!--FOOTER-->        
-        <footer class="main-footer">
+         <footer class="main-footer">
             <div class="social">
                 <ul class="social-list">
-                    <li><img src="img/twitter.svg" width="32px" height="32px" alt="twitter"></li>
-                    <li><img src="img/instagram.svg" width="32px" height="32px" alt="instagram"></li>
-                    <li><img src="img/fb.svg" width="32px" height="32px" alt="facebook"></li>
-                    <li><img src="img/vk.svg" width="32px" height="32px" alt="vk"></li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="img/twitter.svg" width="32px" height="32px" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="img/instagram.svg" width="32px" height="32px" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="img/fb.svg" width="32px" height="32px" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.vk.com" target="_blank">
+                            <img src="img/vk.svg" width="32px" height="32px" alt="vk">
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <ul class="links">
-                <li><img src="img/heart.svg" width="15px" height="13px" alt="сердце"><a href="#"><b>Для поставщиков</b></a></li>
-                <li><a href="#">О производстве</a></li>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
+                <li>
+                    <img src="img/heart.svg" width="15px" height="13px" alt="сердце">
+                    <a href="#">
+                        Для поставщиков
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        О производстве
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Наши документы
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Экологические стандарты
+                    </a>
+                </li>
             </ul>
 
             <div class="copyright">
-                <img src="img/logo-htmlacademy.svg" width="108px" height="39px">
+                <a href="https://htmlacademy.ru" target="_blank">
+                    <img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="Логотип разработчика сайта HTML academy">
+                </a>
                 <p>Сделано в <span>HTML Academy</span>© 2017</p>
             </div>
         </footer>
 
 <!--MODAL-->
-        <section class="purchase">
+        <section class="modal modal-catalog">
+            <h2 class="visually-hidden">Выскакивающее окно каталога</h1>
+            <ul class="modal-catalog-pop-up">
+                <li>
+                    <a href="catalog.html">
+                        Новинки
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="catalog.html">
+                        Сливочное
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html">
+                        Щербеты
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html">
+                        Фруктовый лёд
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html">
+                        Мелорин
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+         <section class="modal modal-search">
+            <h2 class="visually-hidden">Поиск</h2>
+            <form class="modal-search-form" action="https://acho.htmlacademy.ru" method="get">
+                <label for="search" class="visually-hidden">Форма поиска</label>
+                <input id="search" type="search" name="search-field" placeholder="Что ищем?">
+            </form>
+        </section>
+
+         <section class="modal modal-login">
+            <h2 class="visually-hidden">Войти</h2>
+            <form class="modal-login-form">
+                <label class="visually-hidden" for="email">Форма вашего имени</label>
+                <input id="email" type="email" name="email-field" placeholder="Электронная почта">
+                <label class="visually-hidden" for="password"></label>
+                <input id="password" type="password" name="password-field" placeholder="Пароль">
+                <button type="submit" value="Войти">Войти</button>
+                <a class="modal-login-forgot" href="#">Забыли пароль</a>
+                <a class="modal-login-sign-up" href="#">Новая регистрация</a>
+            </form>
+        </section>
+
+        <section class=" modal modal-purchase">
          <table></table>
         </section>
     </body>
