@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link href="css/style.css" rel="stylesheet">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <title>HTML Academy: Глейси</title>
     </head>
     <body>
@@ -11,31 +13,32 @@
          <header class="main-header">
             <nav class="main-navigation">
                 <a href="index.html">
-                    <img class="main-header-logo" src="img/logo.svg" alt="Логотип Глейси">
+                    <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
                 </a>
                 <ul class="site-navigation">
-                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a class="site-navigation-current" href="catalog.html">Каталог</a></li>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О компании</a></li>
                 </ul>
 
-               <ul class="user-navigation">
+                <ul class="user-navigation">
                     <li>
-                        <button type="button">
-                            <img src="img/loupe.svg" width="17px" height="17px" alt="Поиск">
-                        </button>
+                        <a href="#">
+                            <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
+                                Поиск
+                        </a>
                     </li>
                     <li>
-                        <button type="button">
-                            <img src="img/entrance-white.svg" width="21px" height="19px" alt="Войти">
+                        <a href="#">
+                            <img src="img/entrance-white.svg" width="21" height="19" alt="Войти">
                                 Вход  
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button type="button">
-                            <img src="img/basket-red.svg" width="21px" height="20px" alt="Корзина">
-                                2 товара
-                        </button>
+                        <a href="#">
+                            <img src="img/basket.svg" width="21" height="20" alt="Корзина">
+                                Пусто
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -48,8 +51,8 @@
         </header>
 
 <!--MAIN-->
-        <main class="container">
-            <h1>Магазин Глейси</h1>
+        <main class="container-2">
+            <h1>Сливочное мороженое</h1>
             <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
@@ -57,27 +60,25 @@
             </ul>
 
             <section class="filters">
-                <h2>Сливочное мороженое</h2>
-                <form class="filters-form">
-                    <fieldset filters-form-sorting>
-                        <p>
-                            <label for="sorting">Сортировка:</label>
+               <h2 class="visually-hidden">Фильтры</h2>
+                <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset class="form-sorting">
+                        <label for="sorting">Сортировка:</label>
                             <select id="sorting" name="sorting-field">
-                                <option value="popularity">По популярности</option>
+                                <option value="popularity">по популярности</option>
                                 <option value="cheap">сначала недорогие</option>
                                 <option value="expensive">сначала дорогие</option>
                                 <option value="fatness">по жирности</option>
-                            </select>
-                        </p>
+                            </select>                       
                     </fieldset>
 
-                    <fieldset class="filters-form-range">
+                    <fieldset class="form-range">
                         <label for="range">Цена: 100 руб. - 500 руб.</label>
                         <label class="visually-hidden" for="range">Ползунок с выбором диапазона цен</label>
                         <input id="range" type="range" min="50" max="500"  step="50">                      
                     </fieldset>
 
-                    <fieldset class="filters-form-fatness">
+                    <fieldset class="form-fatness">
                         <legend>Жирность:</legend>
                         <ul class="filters-form-fatness-list">
                             <li>
@@ -96,11 +97,12 @@
                                 выше 30%
                                 <input type="radio" id="fatness-4" name="fatness-radio" value="more-than-30">
                             </li>
+                        </ul>
                     </fieldset>
 
-                    <fieldset class="filters-form-topping">
+                    <fieldset class="form-topping">
                         <legend>Наполнители:</legend>
-                        <ul class="filters-form-topping-list">
+                        <ul class="form-topping-list">
                             <li>
                                 <input id="chocolate-checkbox" type="checkbox" name="chocolate" checked>
                                 <label for="chocolate-checkbox">шоколадные</label>
@@ -122,12 +124,12 @@
                                 <label for="jam-checkbox">джемы</label>
                             </li>
                         </ul>
-                        <button class="filters-form-topping-button" type="submit" value="Применить">Применить</button>
                     </fieldset>
+                    <a class="filters-button" href="#">Применить</a>
                 </form>
             </section>
 
-            <section class="ice-cream-range">
+            <section class="catalog ice-cream-range">
                 <h2 class="visually-hidden">Ассортимент мороженого</h2>
                 <ul class="ice-cream-range-list">
                     <li><a href="#">
@@ -170,7 +172,7 @@
                     <li><a href="#">
                         <h3>Сливочно-лимонное с карамельной присыпкой</h3>
                         <div class="ice-cream-image"><img src="img/ice-cream-7.png" width="267px" height="267px" alt="Изображение мороженого"></div>
-                        <div class="ice-cream-range-price">375<img src="img/ruble.svg" width="26px" height="31px" alt="Р"><span>/кг</span></div>
+                        <div class="ice-cream-price">375<img src="img/ruble.svg" width="26px" height="31px" alt="Р"><span>/кг</span></div>
                     </a></li>
 
                     <li><a href="#">
@@ -202,8 +204,10 @@
                         <div class="ice-cream-image"><img src="img/ice-cream-12.png" width="267px" height="267px" alt="Изображение мороженого"></div>
                         <div class="ice-cream-price">420<img src="img/ruble.svg" width="26px" height="31px" alt="Р"><span>/кг</span></div>
                     </a></li>
+                </ul>
 
                     <ul class="pagination">
+                        <li class="arrow-disabled"><</li>
                         <li class="pagination-item pagination-item-current">
                             <a href="#">1</a>
                         </li>
@@ -219,7 +223,7 @@
                         <li class="pagination-item">
                             <a href="#">5</a>
                         </li>
-                        <li class="pagination-item">
+                        <li class="arrow-active">
                             <a href="#">></a>
                         </li>
                     </ul>           
@@ -256,7 +260,7 @@
             <ul class="links">
                 <li>
                     <img src="img/heart.svg" width="15px" height="13px" alt="сердце">
-                    <a href="#">
+                    <a class="link-providers" href="#">
                         Для поставщиков
                     </a>
                 </li>
@@ -277,24 +281,25 @@
                 </li>
             </ul>
 
-            <div class="copyright">
+             <div class="copyright">
                 <a href="https://htmlacademy.ru" target="_blank">
                     <img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="Логотип разработчика сайта HTML academy">
                 </a>
-                <p>Сделано в <span>HTML Academy</span>© 2017</p>
+                <p class="creator">
+                    Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>© 2017
+                </p>
             </div>
         </footer>
 
 <!--MODAL-->
-        <section class="modal modal-catalog">
-            <h2 class="visually-hidden">Выскакивающее окно каталога</h1>
+        <section class="modal modal-catalog-pop-up">
+            <h2 class="visually-hidden">Выскакивающее окно каталога</h2>
             <ul class="modal-catalog-pop-up">
                 <li>
                     <a href="catalog.html">
                         Новинки
                     </a>
                 </li>
-                <hr>
                 <li>
                     <a href="catalog.html">
                         Сливочное
@@ -339,7 +344,8 @@
             </form>
         </section>
 
-        <section class=" modal modal-purchase">
+        <section class="modal modal-purchase">
+            <h2 class="visually-hidden">Корзина</h2>
          <table></table>
         </section>
     </body>
