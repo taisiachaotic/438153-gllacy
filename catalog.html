@@ -8,12 +8,14 @@
         <title>HTML Academy: Глейси</title>
     </head>
     <body>
+        <div class="site-wrapper">
+            <div class="content-wrapper">
 
 <!--HEADER-->
          <header class="main-header">
             <nav class="main-navigation">
                 <a href="index.html">
-                    <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+                    <img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
                 </a>
                 <ul class="site-navigation">
                     <li><a class="site-navigation-current" href="catalog.html">Каталог</a></li>
@@ -23,20 +25,20 @@
 
                 <ul class="user-navigation">
                     <li>
-                        <a href="#">
-                            <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
-                                Поиск
+                        <a class="search-link" href="#">
+                            <p class="visually-hidden">Поиск</p>
+                            <img class="loupe-image" src="img/loupe.svg" width="17" height="17" alt="Поиск">                
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/entrance-white.svg" width="21" height="19" alt="Войти">
+                        <a class="login-link" href="#">
+                            <img class="entrance-image" src="img/entrance-white.svg" width="21" height="19" alt="Войти">
                                 Вход  
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/basket.svg" width="21" height="20" alt="Корзина">
+                        <a class="basket-link" href="#">
+                            <img class="basket-image" src="img/basket.svg" width="21" height="20" alt="Корзина">
                                 Пусто
                         </a>
                     </li>
@@ -45,8 +47,8 @@
 
             <div class="schedule-telephone">
                 <h2 class="visually-hidden">Расписание и номер телефона</h2>
-                <p class="schedule">С 10 до 20, ежедневно</p>
-                <p class="telephone">8 812 450-25-25</p>
+                <p>С 10 до 20, ежедневно<br>
+                <span>8 812 450-25-25</span></p>
             </div>
         </header>
 
@@ -129,7 +131,7 @@
                 </form>
             </section>
 
-            <section class="catalog ice-cream-range">
+            <section class="catalog main-catalog">
                 <h2 class="visually-hidden">Ассортимент мороженого</h2>
                 <ul class="ice-cream-range-list">
                     <li><a href="#">
