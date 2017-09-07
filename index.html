@@ -166,50 +166,48 @@
                 </li>
             </ul>
             
-            <article class="features">
-                <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>                
-                    <p>
-                        <img src="img/ice-cream.svg" width="49" height="49" alt="декоративное изображение"> 
-                        Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                    <p>
-                        <img src="img/eco.svg" width="49" height="49" alt="декоративное изображение">
-                        Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-                    </p>        
-               
-                    <p>
-                        <img src="img/cow.svg" width="49" height="49" alt="декоративное изображение">
-                        Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-                    </p>
-                    <p>
-                        <img src="img/thermometer.svg" width="49" height="49" alt="декоративное изображение">
-                        Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-                    </p>                
+            <section class="main-features">
+                <h2 class="main-features-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>                
+                    <ul class="main-features-list">
+                        <li class="main-features-item main-features-ice-cream">                        
+                            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+                        </li>
+                        <li class="main-features-item main-features-ice-cream">                       
+                            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                        </li>                    
+                        <li class="main-features-item main-features-ice-cream">                        
+                            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                        </li>
+                        <li class="main-features-item main-features-ice-cream">                        
+                            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                        </li>  
+                    </ul>              
+            </section>
+
+            <div class="news-wrapper">
+            <article class="blog">
+              <h2 class="blog-title">Новое в нашем блоге</h2>
+              <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </article>
 
-            <div class="news-subscribe-container">
-            <article class="news">
-                <h2>Новое в нашем блоге</h2>
-                <a href="#">                    
-                        10 способов сервировки фруктовых щербетов к столу                    
-                </a>
-            </article>
-
-            <form class="subscribe-form" action="https://acho.htmlacademy.ru" method="post">
-                <p>
-                    Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                </p>
-                <label class="visually-hidden" for="subscribe-email">Ваша электронная почта</label>
-                <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Электронная почта">
-                <button class="button" type="submit" value="Отправить">Отправить</button>
-            </form>
+            <div class="subscribe">
+              <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="subscirbe-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="label-box">
+                  <input class="input-box subscribe-field" type="text" name="subscribe" id="subscribe-field" required>
+                  <label for="subscribe-field">Электронная почта</label>
+                </div>
+                <button class="button btn-subscribe" type="submit">Отправить</button>
+              </form>
+            </div>
             </div>
         </main>
     </div>
 
-        <section class="map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123961!2d30.320894616039354!3d59.93879686904795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1504585881965"  allowfullscreen></iframe>              
-         </section>
+    <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="../img/map.jpg" allowfullscreen>              
+    </section>
 
 <!--FOOTER-->  
     <div class="content-wrapper">      
@@ -278,7 +276,7 @@
                 <a class="copyright-link" href="https://htmlacademy.ru" target="_blank">
                     HTML Academy
                 </a>                
-                    Сделано в <a class="copyright-link-text" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>© 2017                
+                    Сделано в <a class="copyright-link-text" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>© 2017                
             </p>
         </footer>
 <!--MODAL-->
