@@ -67,7 +67,7 @@
                   <input class="input-box item-login-form" type="password" name="password" id="login-password" required>
                   <label for="login-password">Пароль</label>
                 </div>
-                <button class="btn btn-login-form" type="submit">Войти</button>
+                <button class="button btn-login-form" type="submit">Войти</button>
               </form>
               <div class="login-form-links">
                 <a href="#">Забыли пароль?</a>
@@ -216,7 +216,7 @@
                 <h2 class="visually-hidden">Контактная информация</h2>
                 <p class="contacts-address">Адрес главного офиса и офлайн магазина: <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
                 <p class="contacts-phone">Для заказов по телефону: <b>8 812 450-25-25</b> (с 10 до 20 ежедневно)</p>
-                <a class="btn btn-contacts" href="feedback.html">Форма обратной связи</a>
+                <a class="button btn-contacts" href="feedback.html">Форма обратной связи</a>
             </section>
 
             <div class="social">
@@ -280,19 +280,30 @@
             </p>
         </footer>
 <!--MODAL-->
-        <section class="modal modal-feedback">
-            <form class="modal modal-feedback-form">
-                <h2>Мы обязательно вам ответим!</h2>
-                <label class="visually-hidden" for="feedback-name">Форма вашего имени</label>
-                <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
-                <label class="visually-hidden" for="feedback-email">Форма для вашей электронной почты</label>
-                <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-                <label class="visually-hidden" for="comment">Форма для сообщения</label>
-                <input id="comment" type="text" name="comment" placeholder="Напишите что-нибудь...">
-                <button type="submit" value="Отправить">Отправить</button>
-                <button type="button" value="Закрыть">Закрыть</button>
+        <div class="overlay"></div>
+          <section class="feedback-form">
+            <h2 class="visually-hidden">Обратная связь</h2>
+            <p class="feedback-text">Мы обязательно вам ответим!</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="label-box">
+                <input class="input-box" type="text" name="name" id="feedback-name" required>
+                <label for="feedback-name">Как вас зовут?</label>
+              </div>
+              <div class="label-box">
+                <input class="input-box" type="text" name="email" id="feedback-email" required>
+                <label for="feedback-email">Ваша почта для ответа?</label>
+              </div>
+              <div class="label-box">
+                <textarea class="input-box" name="text" id="feedback-text" required></textarea>
+                <label for="feedback-text">Напишите что-нибудь...</label>
+              </div>
+              <button class="button btn-feedback" type="submit">Отправить</button>
             </form>
-        </section>
+            <button class="modal-close" type="button">Закрыть</button>
+          </section>
+
+        </div>
     </div>
+    <script src="js/popup.js"></script>
 </body>
 </html>
